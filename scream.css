@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    font-family: Mostserrat, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1B263B;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+h1{
+    color: #e0e1dd;
+}
+
+
+.screamcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(assets/galaxy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    padding: 3.4vh;
+}
+
+.scream{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("assets/void.png");
+    background-size: 80% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    padding: 32.7vh;
+}
+
+.screamcontainer h1{
+    font-size: 1.5rem;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    font-size: 16px;
+    width: 40vw;
+}
+.hide{
+    display: none;
+}
+
+.input::placeholder{
+    position: relative;
+}
+
+.scream button{
+    padding: 10px 20px;
+    font-size: 400;
+    background-color: #6B818C;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    color: #e0e1dd;
+}
+
+.scream button:hover{
+    background-color: #ED3F54;
+    color: black;
+    cursor: pointer;
+}
+
+.textt{
+    font-size: 16px;
+    color: #e0e1dd;
+}
+
+.textfade{
+    animation-name: fade;
+    animation-duration: 2.0s;
+}
+
+@keyframes fade {
+    from{opacity: 100%;}
+    to{opacity: 0%;}
+}

@@ -1,0 +1,42 @@
+.subcon{
+    display: flex;
+    align-items: center;
+}
+.inpContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.inputs{
+    display: grid;
+    padding: 15px 40px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item{
+    display: grid;
+}
+
+
+#submit{
+    background-color: #6B818C;
+    border: none;
+    border-radius: 2px;
+    color: #e0e1dd;
+    font-family: Montserrat, sans-serif;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #ED3F54;
+    color: black;
+}

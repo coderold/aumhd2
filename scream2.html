@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AU-MHD Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/logo.png" type="image/icon type">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body{
+        background-color: #1B263B;
+        background-image: url(assets/galaxy.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: soft-light;
+    }
+    .row.content {height: 900px}
+
+    h3{
+        color: white;
+    }
+
+    p{
+        color:#FFFFFF;
+        font-size: 16px;
+    }
+
+  .bg{
+        background-color: #0D1B2A;
+        padding: 30px;
+        border: solid 1px black;
+        border-radius: 2px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+  .navbar{
+    background-color: #0D1B2A;
+    border-color: #ED3F54;
+  }
+
+  .void{
+    height: 70vh;
+  }
+
+  .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  }
+
+  .pos{
+    position: relative;
+  }
+
+  .thoughts{
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    width: 50vw;
+  }
+
+  .scrmBtn{
+    padding: 10px;
+  }
+
+  .textfade{
+    animation-name: fade;
+    animation-duration: 2.0s;
+}
+
+    @keyframes fade {
+    from{opacity: 100%;}
+    to{opacity: 0%;}
+}
+
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 2.0s;
+}
+
+    @keyframes fade-in {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+  .hide{
+    display: none;
+  }
+
+  .qoutes{
+    height: 70vh;
+    padding: 10px;
+  }
+
+    
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="getStarted.html">Mental Health Directory</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="getStarted.html"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        
+
+        <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-question-sign"></span> Are You Okay?<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="yes.html"><span class="glyphicon glyphicon-ok"> Yes</span></a></li>
+              <li class="active"><a href="scream2.html"><span class="glyphicon glyphicon-remove"> No</span></a></li>
+            </ul>
+          </li>
+        
+        <li><a href="reachoutform.php"><span class="glyphicon glyphicon-phone-alt"></span>  Reach Out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" id="screamf">
+    <div class="row">
+        <div class="col-4">
+          <div class="text-center pos">
+            <h3>Scream your thoughts into the void!</h3>
+            <img class="void" src="assets/void.png"> 
+            
+            <div class="centered">
+                <input class="thoughts" id="inputtext" type="text" placeholder="type here...">
+                <p class="textt" id="textt"></p>
+            </div>
+            <div class="scrmBtn">
+                <button id="screambtn" class="screambtn">SCREAM!</button>
+            </div>            
+          </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container" id="qts">
+    <div class="row">
+        <div class="col-4">
+          <div class="text-center bg">
+            <img class="qoutes" src="assets/qoutes/1.png" alt="">
+            <p>click <a href="scream2.html">here</a> to scream again.</p>
+          </div>
+            
+        </div>
+    </div>
+</div>
+
+<script src="scream.js"></script>
+</body>
+</html>
